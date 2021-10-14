@@ -4,7 +4,6 @@ local  old2 = mt2.__index
 setreadonly(mt2, false)
 mt2.__index = newcclosure(function(a, b)
     if   getgenv().aimopen then 
-          print("work")
         if a == mouse and b == "Hit" and not checkcaller() then
             return getgenv().silentaimroot
         end
