@@ -10,4 +10,4 @@ mt2.__index = newcclosure(function(a, b)
     end
     return old2(a, b)
 end)
-
+setreadonly(mt2,true)
